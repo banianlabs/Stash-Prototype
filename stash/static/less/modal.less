@@ -1,0 +1,180 @@
+// modal styling
+// --------------------------------------------------
+
+
+
+
+//temporary css rules for modal animation and hiding--End
+
+#homeModal{
+    &:before{
+    content: ""; 
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0; 
+    z-index: 10;
+    }
+  
+    &:target{
+     
+    // Active animate in modal
+    &:before{
+      display: block;
+    }
+        
+    .modal{
+    display: block;
+      
+    }
+     
+  }
+  
+}
+
+.modal{    
+    background: rgba(46, 41, 41, 0.93);
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:none;
+    z-index: 11;
+}
+
+//temporary css rules for modal animation and hiding--End
+
+
+.modal .fa {
+    color:@white;
+}
+
+
+.modalclose {
+    position: absolute;
+    right:10px;
+    top:10px;
+}
+
+.modalPrev{
+    margin-top: 24.3%;
+    float:left;
+    padding:20px;
+}
+
+.modalNext{
+    margin-top: 24.3%;
+    float: right;
+    padding:20px;
+}
+
+.modal-box{
+ margin: auto;
+position: absolute;
+top: 0; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    z-index: 2;
+}
+
+.modal-box-title{
+color:@white;
+font-family: @brand-primary-font;
+text-transform: uppercase;
+    letter-spacing: 10px;
+    border-top: 1px solid @white;
+    border-bottom: 1px solid @white;
+    padding:10px 10px 10px 20px;
+    width:68.2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5%;
+}
+
+.modalImgBox {
+     margin: auto;
+position: absolute;
+top: 0; left: 0; bottom: 0; right: 0;
+height:70%;
+}
+
+.modalImgBox img{
+    height:100%;
+ 
+}
+
+
+
+
+
+//relevant info section
+
+// ----either make it float left, or center float block, or even click fan out
+.imageInfo {
+    position: absolute;
+    bottom:0px;
+    text-align: center;
+    width:100%;
+    
+}
+
+.modalTag{
+    position:relative;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    vertical-align: middle;
+   overflow: hidden;
+    margin:10px;
+    
+    float:left;
+}
+
+.addTag{
+    float:left;
+    margin-top:19px;
+    margin-left: 10px;
+}
+
+
+
+.relTag{
+    color:@white;
+    font-family: @brand-primary-font;
+    text-transform: uppercase;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.47);
+    width:100px;
+    height:60px;
+    border:2px solid @white;
+    
+
+}
+
+.modalRelImg{
+    width:100px;
+    height: auto;
+}
+
+//Modal Action Stuff
+
+.modalLikes{
+    font-family: @brand-primary-font;
+    color: @white;
+    position: absolute;
+    right:90px;
+    bottom:33px;
+}
+
+
+
+.modalShare {
+    position: absolute;
+    right:33px;
+    bottom:33px;
+}
+.modalShare .fa-circle{
+    color:@brand-primary;
+    line-height: 30px;
+    margin-left: -11px;
+    font-size: 60px;
+}

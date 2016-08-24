@@ -1,0 +1,31 @@
+{
+  "image": [
+    {
+      "name": "Red hair coffee",
+      "url": "http://graphics8.nytimes.com/images/2011/09/12/t-magazine/12strand-ristretto/12strand-ristretto-tmagArticle-v3.jpg"
+    },
+    {
+      "name": "Fancy event wear",
+      "url": "http://www.threadsence.com/images/blogger_hot_minute/bhm_jen_clothes_encounters/slider_4.jpg"
+    },
+    {
+      "name": "KPOP fashion",
+      "url": "http://2.bp.blogspot.com/-8HKsuDngM-M/Tu2piLAe8sI/AAAAAAAAAlc/MCvzDzq3XBE/s1600/001_002.jpg"
+    }
+  ],
+  "tag": [
+    {"name": "summer"},
+    {"name": "hipster"},
+    {"name": "stylish"},
+    {"name": "youth"},
+    {"name": "red"},
+    {"name": "daring"}
+  ],
+  "user": [
+    {
+      "username": "john_doe",
+      "email": "johndoe@gmail.com",
+      "password": "$6$rounds=100000$6YuwhXOaofZhlCPG$Dkez6mZW0Y1xri8BZblHeuTxQmrUEH1Vb4Dt4d5HkTbWSNEj.P7SD54K76UaWVXZ/4ZXdUPkTBsBWXfct5efx/"
+    }
+  ]
+}

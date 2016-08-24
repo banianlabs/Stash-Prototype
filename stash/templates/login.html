@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en" ng-app="AngularFlask" class="logPageBg">
+<head>
+	<meta charset="utf-8">
+	<title>Stash Home</title>
+
+	<link rel="stylesheet" href="/static/css/stash.css">
+
+	<script src="/static/lib/angular/angular.js"></script>
+	<script src="/static/lib/angular/angular-resource.js"></script>
+
+	<script src="/static/js/app.js"></script>
+	<script src="/static/js/controllers.js"></script>
+ 	<script src="/static/js/services.js"></script>
+
+	<script src="/static/lib/jquery/jquery.min.js"></script>
+	<script src="/static/lib/bootstrap/bootstrap.min.js"></script>
+</head>
+<body id="loginPage" class="animated fadeIn">
+
+
+
+
+
+<!--Drawer Menu-->
+
+<input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+<label for="drawer-toggle" id="drawer-toggle-label"></label>
+
+<nav id="drawer">
+      <div class="drawerSection">
+        <h1 class="drawerTitle">My Collections</h1>
+        <ul>
+            <li>
+                <a href="#" class="filmPanel">
+                     <img src="/static/img/ensuen44.jpeg" alt="">
+                     <span class="filmPanelOverlay"></span>
+                     <span class="panelName">#FlyBooks</span>
+                </a>
+            </li>         
+            <li>
+                <a href="#" class="filmPanel">
+                    <img src="/static/img/gorilla.jpg" alt="">
+                    <span class="filmPanelOverlay"></span>
+                    <span class="panelName">#GraphicArt</span>
+                </a>
+            </li>         
+            <li>
+                <a href="#" class="filmPanel">
+                 <img src="/static/img/chandra.jpg" alt="">
+                 <span class="filmPanelOverlay"></span>
+                 <span class="panelName">#Chandra</span>
+                </a>
+            </li>         
+            <li>
+                <a href="#" class="filmPanel">
+                 <img src="/static/img/40int1.jpeg" alt="">
+                 <span class="filmPanelOverlay"></span>
+                 <span class="panelName">#NightlyPhotos</span>
+                </a>
+            </li>         
+            <li>
+                <a href="#" class="filmPanel">
+                 <img src="/static/img/652a.jpeg" alt="">
+                 <span class="filmPanelOverlay"></span>
+                 <span class="panelName">#Grillz</span>
+                </a>
+            </li>         
+            <li>
+                <a href="#" class="filmPanel">
+                 <img src="/static/img/465d.jpeg" alt="">
+                 <span class="filmPanelOverlay"></span>
+                 <span class="panelName">#Paperchase</span>
+                 </a>
+            </li>
+        </ul>
+    </div>     
+      <div class="drawerSection"> 
+        <h1 class="drawerTitle">Following</h1>
+        <ul>
+            <li>
+                <a href="#l" class="filmPanel">
+                    <img src="/static/img/ensuen44.jpeg" alt="">
+                    <span class="filmPanelOverlay"></span>
+                    <span class="panelName">@JimmyZ9936</span>
+                </a>
+            </li>         
+            <li>
+                <a href="#" class="filmPanel">
+                    <img src="/static/img/gorilla.jpg" alt="">
+                    <span class="filmPanelOverlay"></span>
+                    <span class="panelName">@BanianLabs</span>
+                </a>
+            </li>         
+        </ul>
+    </div>        
+        
+
+   </nav>
+
+
+
+
+<div id="page-content">
+
+   <!--Header-->
+<div class="navbar navbar-fixed-top navbar-inverse">
+
+    <a href="index.html" class="navbar-brand"><h3>Stash</h3></a>
+    
+     
+</div>
+   
+    <!--login form here-->
+        <div id="loginwrap" >
+        <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+        <a class="hiddenanchor" id="toregister"></a>
+        <a class="hiddenanchor" id="tologin"></a>
+        <a class="hiddenanchor" id="toforgotpass"></a>
+        <div id="wrapper">
+            <div id="login" class="animate form">
+                <form  action="" autocomplete="on"> 
+                    <h1>Log in</h1> 
+                    <p> 
+                        <label for="username" class="uname"><i class="fa fa-user"></i>Your email or username </label>
+                        <input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
+                    </p>
+                    <p> 
+                        <label for="password" class="youpasswd"><i class="fa fa-key"></i> Your password </label>
+                        <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" /> 
+                         <a href="#toforgotpass" class="to_forgotpass">Forgot your password?</a>
+                    </p>
+                    <p class="keeplogin"> 
+                        <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+                        <label for="loginkeeping">Keep me logged in</label>
+                    </p>                                    
+                    <p class="logButton button"> 
+                        <input type="submit" value="Login" /> 
+                    </p>
+                    <p class="change_link">
+                        Not a member yet ?
+                        <a href="#toregister" class="to_register">Join us</a>
+                    </p>
+                    
+                    
+                    
+                       
+                    
+
+                    
+                </form>
+            </div>
+
+            <div id="register" class="animate form">
+                <form  action="" autocomplete="on"> 
+                    <h1> Sign up </h1> 
+                    <p> 
+                        <label for="usernamesignup" class="uname"><i class="fa fa-user"></i>Your username</label>
+                        <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+                    </p>
+                    <p> 
+                        <label for="emailsignup" class="youmail"><i class="fa fa-envelope"></i> Your email</label>
+                        <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+                    </p>
+                    <p> 
+                        <label for="passwordsignup" class="youpasswd"><i class="fa fa-key"></i>Your password </label>
+                        <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                    </p>
+                    <p> 
+                        <label for="passwordsignup_confirm" class="youpasswd"><i class="fa fa-key"></i>Please confirm your password </label>
+                        <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                    </p>
+                    <p class="signin button"> 
+                        <input type="submit" value="Sign up"/> 
+                    </p>
+                    <p class="change_link">  
+                        Already a member ?
+                        <a href="#tologin" class="to_register"> log in </a>
+                    </p>
+                </form>
+            </div>
+
+            <div id="forgotpass" class="animate form">
+                    <form  action="" autocomplete="on"> 
+                        <h1>Password Reminder</h1> 
+                        <p> 
+                            <label for="usernamesignup" class="uname"><i class="fa fa-user"></i>Your username</label>
+                            <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+                        </p>
+                        <p> 
+                            <label for="emailsignup" class="youmail"><i class="fa fa-envelope"></i>Or, your email</label>
+                            <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+                        </p>
+                        <p class="remind button"> 
+                            <input type="submit" value="Remind Me"/> 
+                        </p>
+                         <p class="change_link">  
+                        Remembered your password?
+                        <a href="#tologin" class="to_register"> log in </a>
+                    </p>
+                    </form>
+                </div>
+       
+        </div>
+    </div>  
+
+</div>
+
+
+</body>
+</html>

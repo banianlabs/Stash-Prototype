@@ -1,0 +1,470 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"jshint",
+				"JSHint"
+			],
+			[
+				"runView",
+				"runViewAppFunction"
+			],
+			[
+				"natural",
+				"naturalWidth"
+			],
+			[
+				"conte",
+				"context  (variable)"
+			],
+			[
+				"width",
+				"naturalWidth"
+			],
+			[
+				"get",
+				"getElementsByName  (function)"
+			],
+			[
+				"viewra",
+				"viewRatioWidth"
+			],
+			[
+				"first",
+				"first"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"c",
+				"clear"
+			],
+			[
+				"val",
+				"val  (function)"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"mat",
+				"margin-bottom"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/JSLint/JSLint.sublime-build",
+	"command_palette":
+	{
+		"height": 360.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"installpac",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"insta",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"install ",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"instal",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"packa in",
+				"Package Control: Install Package"
+			],
+			[
+				"pa k",
+				"Package Control: Remove Package"
+			],
+			[
+				"package inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"upgr",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"packageinstall",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"pcl",
+				"Package Control: List Packages"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"intsal",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"ftp",
+				"SFTP: Browse Server…"
+			],
+			[
+				"sft",
+				"SFTP: Browse Server…"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 647.0
+	},
+	"console":
+	{
+		"height": 320.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/elsung/Documents/Development/sdk/platform-tools/source.properties",
+		"/Users/elsung/Desktop/require.js",
+		"/Users/elsung/Documents/Development/webdev/zstash-ang/app/index.html",
+		"/Users/elsung/Documents/Development/webdev/zstash-ang/app/scripts/app.js",
+		"/Users/elsung/Documents/Development/webdev/zstash-ang/app/scripts/controllers/main.js",
+		"/Users/elsung/Documents/Development/webdev/zstash-ang/app/views/main.html",
+		"/Users/elsung/Documents/Development/webdev/zstash-ang/Gruntfile.js",
+		"/Users/elsung/Documents/Development/test/backbone1",
+		"/Users/elsung/Documents/webview/webview/scripts/ng_gallery_app.js",
+		"/Users/elsung/Documents/webview/webview/one.html",
+		"/Users/elsung/Documents/Development/test/test.html",
+		"/Users/elsung/Documents/Development/test/ft.html",
+		"/Users/elsung/Library/Application Support/Sublime Text 3/Packages/JSLint/JSLint.sublime-build",
+		"/Users/elsung/Library/Application Support/Sublime Text 3/Packages/JSHint/JSHint.sublime-build",
+		"/Users/elsung/Library/Application Support/Sublime Text 3/Packages/JSLint/JSLint.sublime-settings",
+		"/Users/elsung/Documents/webview/webview/portrait.html",
+		"/Users/elsung/Documents/webview/webview/landscape.html",
+		"/Users/elsung/Documents/webview/webview/scripts/land-ng_gallery_app.js",
+		"/Users/elsung/Desktop/test.html",
+		"/Users/elsung/Desktop/csstest.css",
+		"/Users/elsung/Documents/Development/test/jstest.js",
+		"/Users/elsung/Library/Application Support/Sublime Text 3/Packages/Web Inspector 3/swi.sublime-settings",
+		"/Users/elsung/Library/Application Support/Sublime Text 3/Packages/User/swi.sublime-settings",
+		"/Users/elsung/Documents/Development/test/nodeserverexample.js",
+		"/Users/elsung/Library/Application Support/Sublime Text 3/Packages/User/node.sublime-build",
+		"/Users/elsung/Desktop/jstest.js",
+		"/Users/elsung/Desktop/jstest",
+		"/Users/elsung/Documents/Development/github/ZWebApp/index.php",
+		"/Users/elsung/Documents/zynch/index.html",
+		"/Users/elsung/Documents/zynch/js/master.js",
+		"/Users/elsung/Documents/zynch/js/head.min.js",
+		"/Users/elsung/Documents/zynch/js/require.js",
+		"/Users/elsung/Documents/webview/webview/scripts/port-ng_gallery_app.js",
+		"/Users/elsung/Documents/Development/github/ZWebApp/js/libs/mixituprun.js",
+		"/Users/elsung/Documents/Development/github/ZWebApp/js/libs/copyCSS.js",
+		"/Users/elsung/Desktop/Test/index.html",
+		"/Users/elsung/Desktop/Test/mixitup-1.5.5/src/jquery.mixitup.js",
+		"/Users/elsung/Desktop/Test/template.css",
+		"/Users/elsung/Desktop/index.html",
+		"/Users/elsung/Documents/webview/webview/static/styles/land-styles.css",
+		"/Users/elsung/Documents/webview/webview/static/styles/port-styles.css",
+		"/Users/elsung/Desktop/indexhd_files/preview.js",
+		"/Users/elsung/Desktop/indexhd.html",
+		"/Users/elsung/Documents/Development/github/ZWebApp/index.html",
+		"/Users/elsung/Desktop/appslide/scripts/ng_gallery_app.js",
+		"/Users/elsung/Desktop/appslide/static/styles/styles.css",
+		"/Users/elsung/Desktop/appslide/index.html",
+		"/Users/elsung/Google Drive/Web App Dev Learnings/Angular JS/angularjsgallary-master-Final 1.20.14/index.html",
+		"/Users/elsung/Google Drive/Web App Dev Learnings/Angular JS/angularjsgallary-master-Final 1.20.14/static/styles/styles.css",
+		"/Users/elsung/Desktop/styles.css",
+		"/Users/elsung/Library/Application Support/Sublime Text 3/Packages/User/SFTP.errors.log",
+		"/Users/elsung/Documents/Wait n Follow/SNA FIN NOW/NEW SNA STATIC/assets/scripts/formcalc.js",
+		"/Users/elsung/Documents/Wait n Follow/SNA FIN NOW/NEW SNA STATIC/order.html",
+		"/var/folders/1b/920rr5tx2_ndsnwr8lm2_gsh0000gp/T/sublime-sftp-browse-1391488355/Serifgraphics.com/worldcup/wp-content/themes/WCS/style.css",
+		"/Users/elsung/Desktop/SNA FIN NOW/NEW SNA STATIC/assets/css/style.css",
+		"/Users/elsung/Desktop/SNA FIN NOW/NEW SNA STATIC/order.html",
+		"/Users/elsung/Desktop/SNA FIN NOW/NEW SNA STATIC/assets/scripts/formcalc.js",
+		"/Users/elsung/Desktop/SNA FIN NOW/NEW SNA STATIC/assets/scripts/app.js",
+		"/Users/elsung/Documents/Development/appgyver/apitest/www/stylesheets/application.css",
+		"/Users/elsung/Documents/Development/appgyver/apitest/www/javascripts/application.js",
+		"/Users/elsung/Documents/Development/appgyver/apitest/www/index.html",
+		"/Users/elsung/Documents/Development/appgyver/app1/config/application.coffee",
+		"/Users/elsung/Documents/Development/appgyver/app1/app/controllers/steroidsTutorial.js",
+		"/Users/elsung/Documents/Development/appgyver/app1/app/controllers/application.js",
+		"/Users/elsung/Documents/Development/appgyver/app1/app/views/steroidsTutorial/index.html",
+		"/Users/elsung/Documents/Development/appgyver/app1/dist/views/steroidsTutorial/index.html",
+		"/Users/elsung/Documents/Development/appgyver/app1/app/views/layouts/steroidsTutorial.html",
+		"/Users/elsung/Documents/Development/appgyver/app1/www/tutorial.html",
+		"/Users/elsung/Documents/Development/appgyver/app1/www/index.html",
+		"/Users/elsung/Documents/Development/github/phonegap/app1/www/index.html",
+		"/Users/elsung/Documents/Development/github/phonegap/app1/www/config.xml",
+		"/Users/elsung/Documents/Development/github/phonegap/app1/www/js/index.js",
+		"/Users/elsung/Documents/Development/test/phonegap-app/www/index.html",
+		"/Users/elsung/Documents/Development/test/phonegap-app/www/css/index.css",
+		"/Users/elsung/Desktop/SNA FIN NOW/NEW SNA STATIC/assets/css/style-responsive.css",
+		"/Users/elsung/Desktop/SNA FIN NOW/NEW SNA STATIC/assets/css/custom.css",
+		"/Users/elsung/Desktop/SNA FIN NOW/NEW SNA STATIC/faq.html",
+		"/Users/elsung/Desktop/SNA FIN NOW/NEW SNA STATIC/about.html",
+		"/Users/elsung/Desktop/SNA FIN NOW/NEW SNA STATIC/contact.html",
+		"/Users/elsung/Desktop/SNA FIN NOW/NEW SNA STATIC/index.html",
+		"/Users/elsung/Desktop/SNA FIN NOW/NEW SNA STATIC/page_contacts.html",
+		"/Users/elsung/Desktop/SNA FIN NOW/NEW SNA STATIC/page_faq.html",
+		"/Users/elsung/Desktop/SNA FIN NOW/NEW SNA STATIC/page_about.html",
+		"/Users/elsung/Desktop/SNA FIN NOW/NEW SNA STATIC/page_contacts copy.html",
+		"/Users/elsung/Google Drive/Web App Dev Learnings/Angular JS/old ver jan 18th/angularjsgallary-master/static/styles/styles.css",
+		"/Users/elsung/Google Drive/Web App Dev Learnings/Angular JS/old ver jan 18th/angularjsgallary-master/scripts/ng_gallery_app.js",
+		"/Users/elsung/Google Drive/Web App Dev Learnings/Angular JS/old ver jan 18th/angularjsgallary-master/index.html",
+		"/Users/elsung/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/Serifgraphics.com"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"uCtrl",
+			"first",
+			"webkit=progress",
+			"green",
+			"greeen",
+			", \"js\"",
+			", \"css\"",
+			"loadjscssfile",
+			".length",
+			"dot",
+			"nav",
+			"50%",
+			".play",
+			"play",
+			"html",
+			"ul",
+			"play",
+			"../webview/",
+			"../webview",
+			"descripti",
+			"amount",
+			"name",
+			"threejs",
+			"calculated",
+			"amount",
+			"eta",
+			"\"$\" + ",
+			".append",
+			"phoneGap",
+			"name",
+			"contact",
+			"side",
+			"bx-",
+			"copy",
+			"footer",
+			"assets",
+			"slide",
+			"metronic",
+			"leave the worries",
+			"info@",
+			"info",
+			"info@",
+			"logo",
+			"play_back_control",
+			"playback",
+			"play_",
+			"play_back_control",
+			"play_back_con"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"head.load"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.coffeecompile_output":
+	{
+		"height": 124.0
+	},
+	"output.exec":
+	{
+		"height": 270.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 100.0
+	},
+	"output.sftp":
+	{
+		"height": 113.0
+	},
+	"project": "stash.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

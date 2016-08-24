@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en" ng-app="AngularFlask" id="homePage" class="animated fadeIn">
+<head>
+	<meta charset="utf-8">
+	<title>Stash Home</title>
+	<link rel="stylesheet" href="/static/css/stash.css">
+
+	<script src="/static/lib/angular/angular.js"></script>
+	<script src="/static/lib/angular/angular-resource.js"></script>
+
+	<script src="/static/js/app.js"></script>
+	<script src="/static/js/controllers.js"></script>
+ 	<script src="/static/js/services.js"></script>
+
+	<script src="/static/lib/jquery/jquery.min.js"></script>
+	<script src="/static/lib/bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<!-- Jim's Angular stuff here
+<div class="container">
+  <div class="header">
+  	<h4>-------- Stash ----------</h4>
+	  	<div class="btn-toolbar" ng-controller="HeaderController">
+		  	<button type="button" class="btn btn-circular btn-primary" ng-click="upload">
+		  		Upload
+		  	</button>
+		  	<input ng-model="query" type="text" id="search-bar" placeholder="Search Tags By Keyword" />
+		   	<button type="button" class="btn btn-circular btn-primary" ng-click="share">
+		   		Share
+		  	</button>
+	  </div>
+   </div>
+   <br/>
+   <div ng-view></div>
+-->
+
+
+<!--Drawer Menu-->
+
+<input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+<label for="drawer-toggle" id="drawer-toggle-label"></label>
+
+<nav id="drawer">
+      <div class="drawerSection">
+        <h1 class="drawerTitle">My Collections</h1>
+        <ul>
+            <li>
+                <a href="#" class="filmPanel">
+                     <img src="/static/img/ensuen44.jpeg" alt="">
+                     <span class="filmPanelOverlay"></span>
+                     <span class="panelName">#FlyBooks</span>
+                </a>
+            </li>         
+            <li>
+                <a href="#" class="filmPanel">
+                    <img src="/static/img/gorilla.jpg" alt="">
+                    <span class="filmPanelOverlay"></span>
+                    <span class="panelName">#GraphicArt</span>
+                </a>
+            </li>         
+            <li>
+                <a href="#" class="filmPanel">
+                 <img src="/static/img/chandra.jpg" alt="">
+                 <span class="filmPanelOverlay"></span>
+                 <span class="panelName">#Chandra</span>
+                </a>
+            </li>         
+            <li>
+                <a href="#" class="filmPanel">
+                 <img src="/static/img/40int1.jpeg" alt="">
+                 <span class="filmPanelOverlay"></span>
+                 <span class="panelName">#NightlyPhotos</span>
+                </a>
+            </li>         
+            <li>
+                <a href="#" class="filmPanel">
+                 <img src="/static/img/652a.jpeg" alt="">
+                 <span class="filmPanelOverlay"></span>
+                 <span class="panelName">#Grillz</span>
+                </a>
+            </li>         
+            <li>
+                <a href="#" class="filmPanel">
+                 <img src="/static/img/465d.jpeg" alt="">
+                 <span class="filmPanelOverlay"></span>
+                 <span class="panelName">#Paperchase</span>
+                 </a>
+            </li>
+        </ul>
+    </div>     
+      <div class="drawerSection"> 
+        <h1 class="drawerTitle">Following</h1>
+        <ul>
+            <li>
+                <a href="#l" class="filmPanel">
+                    <img src="/static/img/ensuen44.jpeg" alt="">
+                    <span class="filmPanelOverlay"></span>
+                    <span class="panelName">@JimmyZ9936</span>
+                </a>
+            </li>         
+            <li>
+                <a href="#" class="filmPanel">
+                    <img src="/static/img/gorilla.jpg" alt="">
+                    <span class="filmPanelOverlay"></span>
+                    <span class="panelName">@BanianLabs</span>
+                </a>
+            </li>         
+        </ul>
+    </div>        
+        
+
+   </nav>
+
+<!--Main Content-->
+<div id="page-content">
+
+<!--Header-->
+<div class="navbar navbar-fixed-top navbar-inverse">
+
+    <a href="index.html" class="navbar-brand"><h3>Stash</h3></a>
+    <row>
+       <a href="#" class="headerbtn">
+            <span class="fa-stack">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-upload fa-stack-2x homeAction"></i>
+            </span>
+        </a>
+        
+        <input class="mainSearch" type="text">
+
+        <a href="#" class="headerbtn">
+            <span class="fa-stack">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-file fa-stack-2x homeAction"></i>
+<!--                Rename / redesign this button when we determine what this does!-->
+<!--                The playlist Button (TBD)-opens to a playlist for curation. users can create or remix existing playlists/collections into new ones. after which they can choose to share it-->
+            </span>
+        </a>
+    </row>
+    
+     <a href="login.html" class="login"><i class="fa fa-sign-in"></i>login</a>
+     
+</div>
+
+    <!--main collection Strips/ playlist area (name TBD)-->
+    <div class="stripPrevBlock">
+        <div class="stripPrevBlockOverlay"></div>
+        <div class="stripPrev">
+               <h2 class="stripPrevBlockTitle">Collections</h2>
+                <div class="stripPrevImgSet">
+                    <a href="" class="stripImgBox"><img src="/static/img/ensuen44.jpeg" alt="" class="stripImg"></a>
+                    <a href="" class="stripImgBox"><img src="/static/img/gorilla.jpg" alt="" class="stripImg"></a>
+                    <a href="" class="stripImgBox"><img src="/static/img/652a.jpeg" alt="" class="stripImg"></a>
+                    <h3 class="stripPrevTitle">#Fashion</h3>
+                </div>
+
+                <div class="stripPrevImgSet">
+                    <a href="" class="stripImgBox"><img src="/static/img/ensuen44.jpeg" alt="" class="stripImg"></a>
+                    <a href="" class="stripImgBox"><img src="/static/img/chandra.jpg" alt="" class="stripImg"></a>
+                    <a href="" class="stripImgBox"><img src="/static/img/mnk8.png" alt="" class="stripImg"></a>
+                    <h3 class="stripPrevTitle">#SoMuchWin</h3>
+                </div>
+
+                <div class="stripPrevImgSet">
+                    <a href="" class="stripImgBox"><img src="/static/img/ensuen44.jpeg" alt="" class="stripImg"></a>
+                    <a href="" class="stripImgBox"><img src="/static/img/40int1.jpeg" alt="" class="stripImg"></a>
+                    <a href="" class="stripImgBox"><img src="/static/img/155exp.jpeg" alt="" class="stripImg"></a>
+                    <h3 class="stripPrevTitle">#SupaAvengers</h3>
+                </div>    
+
+                <div class="stripPrevImgSet">
+                    <a href="" class="stripImgBox"><img src="/static/img/ensuen44.jpeg" alt="" class="stripImg"></a>
+                    <a href="" class="stripImgBox"><img src="/static/img/gorilla.jpg" alt="" class="stripImg"></a>
+                    <a href="" class="stripImgBox"><img src="/static/img/465d.jpeg" alt="" class="stripImg"></a>
+                    <h3 class="stripPrevTitle">#RandomThoughtsToday</h3>
+                </div>
+
+
+            
+        </div>
+    </div>
+
+    <!--main image grid-->
+    <div class="container">
+        <div class="row">
+            <div class="strip">
+<!--               <h2 class="stripSectionTitle"></h2>-->
+                <div class="strip-box">
+                    <a href="#homeModal">
+                        <img class="strip-box-img" src="/static/img/ensuen44.jpeg"/></a>
+                    <btn class="strip-box-button btn">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-heart fa-stack-1x"></i>
+                        </span>
+                    </btn>
+                </div>
+                <div class="strip-box">
+                    <a href="#homeModal"><img class="strip-box-img" src="/static/img/tmp335.jpg"/></a>
+                    <btn class="strip-box-button btn">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-heart fa-stack-1x"></i>
+                        </span>
+                    </btn>
+                </div>
+                <div class="strip-box">
+                    <a href="#homeModal"><img class="strip-box-img" src="/static/img/652a.jpeg"/></a>
+                    <btn class="strip-box-button btn">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-heart fa-stack-1x"></i>
+                        </span>
+                    </btn>
+                </div>
+                <div class="strip-box">
+                    <a href="#homeModal"><img class="strip-box-img" src="/static/img/Blackberry-Empathy-3.jpg"/></a>
+                    <btn class="strip-box-button btn">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-heart fa-stack-1x"></i>
+                        </span>
+                    </btn>
+                </div>
+                <div class="strip-box">
+                    <a href="#homeModal"><img class="strip-box-img" src="/static/img/the-thing-poster.jpeg"/></a>
+                    <btn class="strip-box-button btn">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-heart fa-stack-1x"></i>
+                        </span>
+                    </btn>
+                </div>
+                <div class="strip-box">
+                    <a href="#homeModal"><img class="strip-box-img" src="/static/img/Vans-OTW-Collection-Larkin-Bedford-Alomar-03.jpg"/></a>
+                    <btn class="strip-box-button btn">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-heart fa-stack-1x"></i>
+                        </span>
+                    </btn>
+                </div>
+                <div class="strip-box">
+                    <a href="#homeModal"><img class="strip-box-img" src="/static/img/ss13ps16.jpg"/></a>
+                    <btn class="strip-box-button btn">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-heart fa-stack-1x"></i>
+                        </span>
+                    </btn>
+                </div>
+                <div class="strip-box">
+                    <a href="#homeModal"><img class="strip-box-img" src="/static/img/17start.jpg"/></a>
+                    <btn class="strip-box-button btn">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-heart fa-stack-1x"></i>
+                        </span>
+                    </btn>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+    <!-- End bootstrap starter example -->
+
+</div>
+
+
+<!--This is where the mock lightbox is-->
+<div id="homeModal">
+     <div class="modal animated fadeIn">
+  
+    
+<!--    The Box for all the modal stuff-->
+    <div class="modal-box">
+    
+        <a href="#homePage" class="modalclose" aria-hidden="true" ><i class="fa fa-times fa-2x"></i></a>.
+    <a href="" class="modalPrev"><i class="fa fa-chevron-left fa-4x"></i></a>
+    <a href="" class="modalNext"><i class="fa fa-chevron-right fa-4x"></i></a>
+      
+      
+       <h5 class="modal-box-title">wendypeterpan.jpg</h5>
+        <!--        box for the images            -->
+        <div class="modalImgBox">
+            <img src="/static/img/ensuen44.jpeg"/>
+            
+        </div>
+        
+        <!--        box for the info of images            -->
+        <div class="imageInfo">
+               
+                <div class="modalTag">
+                    <span class="relTag">#Gorilla</span>
+                    <img class="modalRelImg" src="/static/img/gorilla.jpg" alt="">
+                </div>
+                <div class="modalTag">
+                    <span class="relTag">#Monday</span>
+                    <img class="modalRelImg" src="/static/img/monday.jpg" alt="">
+                </div>
+                <div class="modalTag">
+                   <span class="relTag">#BdClouds</span>
+                    <img class="modalRelImg" src="/static/img/bdclouds.jpg" alt="">
+                </div>
+                <a href="#" class="modelTag addTag">
+                    <i class="fa fa-plus-circle fa-3x"></i>
+                </a>
+        </div>    
+ 
+                   
+            <!--        box for the actions           -->
+            <div class="modalActions">
+               <div class="modalLikes">
+                   <span class="fa-stack">
+                   <i class="fa fa-stack">315</i>
+                        <i class="fa fa-heart fa-stack-2x"></i>
+                   </span>
+               </div>
+               
+                <a href="#" class="modalShare">
+                    <span class="fa-stack">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-share fa-stack-2x"></i>
+                    </span>
+                </a>
+            </div>
+    </div>
+    </div>
+
+</div>
+
+</body>
+</html>

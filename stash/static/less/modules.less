@@ -1,0 +1,436 @@
+//
+// Grid system
+// --------------------------------------------------
+
+//----------Strip Preview - Sets of images----------
+
+.stripPrevBlock{
+    background: url(../img/652a.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    position:relative;
+    text-align: center;
+    display:block;
+    
+     &:before {
+    content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+		opacity: .6; 
+  }
+    
+}
+
+.stripPrevBlockTitle{
+    text-align: center;
+    color:@white;
+    font-family: @brand-primary-font;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-top:0px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.stripPrev{
+    position: relative;
+    display: inline-block;
+    margin:0 auto;
+}
+.stripPrevImgSet{
+    position: relative;
+    display: block;
+    height:250px;
+    width:230px;
+    margin:10px;
+    float:left;
+}
+
+.stripImgBox{
+    position: absolute;
+    width:200px;
+    height:200px;
+    overflow: hidden;
+    border: 4px solid @white;
+    text-align: center;
+    background: #FFF;
+    
+}
+
+.stripImg{
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    width:auto;
+    height: auto;
+    min-width:100%;
+    min-height:100%;
+    max-height:150%;
+    max-width:150%;
+    margin: 0 auto;
+}
+
+.stripImg:nth-child(1), .stripImgBox:nth-child(1){
+    top:0px;
+    left:0px;
+}
+
+.stripImg:nth-child(2), .stripImgBox:nth-child(2){
+    top:10px;
+    left:10px;
+    transform:rotate(3deg);
+-ms-transform:rotate(3deg); /* IE 9 */
+-webkit-transform:rotate(3deg); /* Opera, Chrome, and Safari */
+}
+
+.stripImg:nth-child(3), .stripImgBox:nth-child(3){
+    top:20px;
+    left:20px;
+    transform:rotate(7deg);
+-ms-transform:rotate(7deg); /* IE 9 */
+-webkit-transform:rotate(7deg); /* Opera, Chrome, and Safari */
+}
+
+
+.stripPrevTitle {
+    position: absolute;
+    top:0px;
+    left:0px;
+    padding:15px 25px;
+    margin-left:20px;
+    margin-top: 160px;;
+    color:@brand-primary;
+    font-family: @brand-primary-font;
+    letter-spacing: 4px;
+    font-size: 14px;
+    background: #FFF;
+     transform:rotate(7deg);
+-ms-transform:rotate(7deg); /* IE 9 */
+-webkit-transform:rotate(7deg); /* Opera, Chrome, and Safari */
+}
+
+
+//----------Strip Grid of Images----------
+
+.strip {
+    text-align: center;
+}
+
+//.stripSectionTitle{
+//    text-align: center;
+//    color:@brand-primary;
+//    font-family: @brand-primary-font;
+//    letter-spacing: 10px;
+//    text-transform: uppercase;
+//    margin-top:0px;
+//    padding-top: 30px;
+//    padding-bottom: 10px;
+//}
+
+.strip-box  {
+position: relative;
+    display: inline-block;
+    border: 10px solid @white;
+    margin:10px;
+    
+}
+
+.strip-box-img{
+    width:auto;
+    height:260px;
+}
+
+.strip-box-button{
+    position: absolute;
+    bottom:0px;
+    left:-5px;
+}
+
+.strip-box-button .fa-circle{
+        color:#FFF;
+}
+
+.strip-box-button .fa-heart{
+        color:#dd3b5a;
+}
+
+// Container widths
+//
+// Set the container width, and override it for fixed 1s in media queries.
+
+.container {
+  .container-fixed();
+
+  @media (min-width: @screen-sm-min) {
+    width: @container-sm;
+  }
+  @media (min-width: @screen-md-min) {
+    width: @container-md;
+  }
+  @media (min-width: @screen-lg-min) {
+    width: @container-lg;
+  }
+}
+
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but without any defined
+// width for fluid, full width layouts.
+
+.container-fluid {
+  .container-fixed();
+}
+
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
+
+.row {
+  .make-row();
+}
+
+
+// Columns
+//
+// Common styles for small and large grid columns
+
+.make-grid-columns();
+
+
+// Extra small grid
+//
+// Columns, offsets, pushes, and pulls for extra small devices like
+// smartphones.
+
+.make-grid(xs);
+
+
+// Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+
+@media (min-width: @screen-sm-min) {
+  .make-grid(sm);
+}
+
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+
+@media (min-width: @screen-md-min) {
+  .make-grid(md);
+}
+
+
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+
+@media (min-width: @screen-lg-min) {
+  .make-grid(lg);
+}
+
+
+//
+// Responsive: Utility classes
+// --------------------------------------------------
+
+
+// IE10 in Windows (Phone) 8
+//
+// Support for responsive views via media queries is kind of borked in IE10, for
+// Surface/desktop in split view and for Windows Phone 8. This particular fix
+// must be accompanied by a snippet of JavaScript to sniff the user agent and
+// apply some conditional CSS to *only* the Surface/desktop Windows 8. Look at
+// our Getting Started page for more information on this bug.
+//
+// For more information, see the following:
+//
+// Issue: https://github.com/twbs/bootstrap/issues/10497
+// Docs: http://getbootstrap.com/getting-started/#support-ie10-width
+// Source: http://timkadlec.com/2013/01/windows-phone-8-and-device-width/
+// Source: http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
+
+@-ms-viewport {
+  width: device-width;
+}
+
+
+// Visibility utilities
+// Note: Deprecated .visible-xs, .visible-sm, .visible-md, and .visible-lg as of v3.2.0
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+  .responsive-invisibility();
+}
+
+.visible-xs-block,
+.visible-xs-inline,
+.visible-xs-inline-block,
+.visible-sm-block,
+.visible-sm-inline,
+.visible-sm-inline-block,
+.visible-md-block,
+.visible-md-inline,
+.visible-md-inline-block,
+.visible-lg-block,
+.visible-lg-inline,
+.visible-lg-inline-block {
+  display: none !important;
+}
+
+.visible-xs {
+  @media (max-width: @screen-xs-max) {
+    .responsive-visibility();
+  }
+}
+.visible-xs-block {
+  @media (max-width: @screen-xs-max) {
+    display: block !important;
+  }
+}
+.visible-xs-inline {
+  @media (max-width: @screen-xs-max) {
+    display: inline !important;
+  }
+}
+.visible-xs-inline-block {
+  @media (max-width: @screen-xs-max) {
+    display: inline-block !important;
+  }
+}
+
+.visible-sm {
+  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    .responsive-visibility();
+  }
+}
+.visible-sm-block {
+  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    display: block !important;
+  }
+}
+.visible-sm-inline {
+  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    display: inline !important;
+  }
+}
+.visible-sm-inline-block {
+  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    display: inline-block !important;
+  }
+}
+
+.visible-md {
+  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    .responsive-visibility();
+  }
+}
+.visible-md-block {
+  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    display: block !important;
+  }
+}
+.visible-md-inline {
+  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    display: inline !important;
+  }
+}
+.visible-md-inline-block {
+  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    display: inline-block !important;
+  }
+}
+
+.visible-lg {
+  @media (min-width: @screen-lg-min) {
+    .responsive-visibility();
+  }
+}
+.visible-lg-block {
+  @media (min-width: @screen-lg-min) {
+    display: block !important;
+  }
+}
+.visible-lg-inline {
+  @media (min-width: @screen-lg-min) {
+    display: inline !important;
+  }
+}
+.visible-lg-inline-block {
+  @media (min-width: @screen-lg-min) {
+    display: inline-block !important;
+  }
+}
+
+.hidden-xs {
+  @media (max-width: @screen-xs-max) {
+    .responsive-invisibility();
+  }
+}
+.hidden-sm {
+  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    .responsive-invisibility();
+  }
+}
+.hidden-md {
+  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    .responsive-invisibility();
+  }
+}
+.hidden-lg {
+  @media (min-width: @screen-lg-min) {
+    .responsive-invisibility();
+  }
+}
+
+
+// Print utilities
+//
+// Media queries are placed on the inside to be mixin-friendly.
+
+// Note: Deprecated .visible-print as of v3.2.0
+.visible-print {
+  .responsive-invisibility();
+
+  @media print {
+    .responsive-visibility();
+  }
+}
+.visible-print-block {
+  display: none !important;
+
+  @media print {
+    display: block !important;
+  }
+}
+.visible-print-inline {
+  display: none !important;
+
+  @media print {
+    display: inline !important;
+  }
+}
+.visible-print-inline-block {
+  display: none !important;
+
+  @media print {
+    display: inline-block !important;
+  }
+}
+
+.hidden-print {
+  @media print {
+    .responsive-invisibility();
+  }
+}
